@@ -1,0 +1,43 @@
+/* Paleta de colores */
+$color-1: #353535; /* Dark */
+$color-2: #3C6E71; /* Green */
+$color-3: #FFFFFF; /* White */
+$color-4: #D9D9D9; /* Grey */
+$color-5: #284B63; /* Blue */
+
+/* Gradientes */
+$grad-1: linear-gradient(to left, $color-3, $color-5);
+
+/* Tamaños de fuente */
+$fs-xs: 0.4rem;
+$fs-sm: 0.8rem;
+$fs-md: 1rem;
+$fs-lg: 1.4rem;
+
+/* Grosor de fuente */
+$fw-light: 300;
+$fw-reg: 400;
+$fw-bold: 700;
+
+/* Esquinas redondeadas */
+$br-5: 5px;
+$br-10: 10px;
+
+/* Clases universales */
+.textCenter{
+    text-align: center;
+}
+.textUpper{
+    text-transform: uppercase;
+}
+.overAuto{
+	overflow: auto;
+}
+
+/* Bucles */
+@for $m from 1 through 9{
+	.mt#{$m}{margin-top: $m+rem;}
+}
+@for $m from 1 through 9{
+	.mb#{$m}{margin-bottom: $m+rem;}
+}

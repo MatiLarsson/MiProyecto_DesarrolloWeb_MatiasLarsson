@@ -1,0 +1,6 @@
+@mixin font($size, $weight, $color, $align: center){
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+    color: $color;
+}

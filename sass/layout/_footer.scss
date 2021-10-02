@@ -1,0 +1,60 @@
+#footer{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 9rem;
+    background-color: $color-1;
+    nav{
+        ol{
+            background-color: transparent;
+        }
+    }
+    .contactChannels{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        a{  
+            margin: 0 2rem;
+            width: 30px;
+            height: 30px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .footerText{
+        .footerMenu{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            p{
+                @include font($fs-lg, $fw-bold, $color-3);
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: center;
+                li{
+                    margin: 0 2rem;
+                    a{
+                        text-decoration: none;
+                        @include font($fs-md, $fw-light, $color-3);
+                    }
+                }
+            }
+        }
+        p{
+            color: $color-3;
+        }
+    }
+}

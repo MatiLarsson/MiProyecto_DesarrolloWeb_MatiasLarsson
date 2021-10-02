@@ -1,0 +1,100 @@
+#main{
+    .novedad{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        header{
+            width: 100%;
+            border-bottom: 0.5rem solid $color-5;
+            p{
+                font-size: $fs-lg;
+                font-weight: $fw-bold;
+            }
+        }
+        .novedadGaleria{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: center;
+                h3{
+                    font-size: $fs-sm;
+                    color: rgb(26, 196, 26);
+                }
+                .novedad1{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-content: center;
+                    width: 16rem;
+                    height: 16rem;
+                    background-image: url('../assets/novedades/novedad1.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: $br-10;
+                    transition: 0.2s;
+                    &:hover{
+                        scale: 1.1;
+                    }
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: center;
+                h3{
+                    font-size: $fs-sm;
+                    color: rgb(26, 196, 26);
+                }
+                .novedad2{
+                    width: 16rem;
+                    height: 16rem;
+                    background-image: url('../assets/novedades/novedad2.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: $br-10;
+                    transition: 0.2s;
+                    &:hover{
+                        scale: 1.1;
+                    }
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: center;
+                h3{
+                    font-size: $fs-sm;
+                    color: rgb(26, 196, 26);
+                }
+                .novedad3{
+                    width: 16rem;
+                    height: 16rem;
+                    background-image: url('../assets/novedades/novedad3.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: $br-10;
+                    transition: 0.2s;
+                    &:hover{
+                        scale: 1.1;
+                    }
+                }
+            }
+        } 
+    }
+}

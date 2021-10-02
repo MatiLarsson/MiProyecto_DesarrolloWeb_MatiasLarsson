@@ -1,0 +1,70 @@
+#main{
+    .carrito{
+        width: 100vw;
+        min-width: 50rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        border-top: 1rem solid $color-5;
+        border-bottom: 1rem solid $color-5;
+        p{
+            font-size: $fs-lg;
+            font-weight: $fw-bold;
+        }
+        table{
+            ul{
+                list-style-type: none;
+                margin: 0 3rem;
+                color: $color-3;
+            }
+        }
+        .checkOutContainer{
+            width: 100%;
+            align-items: center;
+            justify-items: center;
+            border-top: 1rem solid $color-5;
+            border-bottom: 1rem solid $color-5;
+            background-color: $color-2;
+            .checkOutImage1{
+                background-image: url('../assets/checkoutimage1.jpg');
+                height: 150px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            @media screen and (min-width: 1200px){
+                .checkOutImage1{
+                    min-height: 500px;
+                }
+            }
+            div{
+                table{
+                    th, li{
+                        font-size: $fs-sm;
+                        font-weight: $fw-light;
+                    }
+                    @media screen and (min-width: 1200px){
+                        th, li{
+                            font-size: $fs-md;
+                            font-weight: $fw-reg;
+                        }
+                    }
+                }
+            }
+            .checkOutImage2{
+                background-image: url('../assets/checkoutimage2.jpg');
+                height: 150px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }  
+            @media screen and (min-width: 1200px){
+                .checkOutImage2{
+                    min-height: 500px;
+                }
+            }
+        }
+    }
+}   

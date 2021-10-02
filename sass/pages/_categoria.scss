@@ -1,0 +1,265 @@
+#main{
+    .galeria{
+        .galeriaProductos{
+            .galeriaProductos__general{
+                div{
+                    div{
+                        a{  
+                            width: 15px;
+                            height: 15px;
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            background-image: url('../assets/empty_heart.png');
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            transition: all 0.3s;
+                            &:hover{
+                                scale: 1.2;
+                            }                       
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .galeriaProductos{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+        .galeriaProductos__general{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            div{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-content: center;
+                div{
+                    width: 8rem;
+                    height: 8rem;
+                    border-radius: $br-10;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                    transition: 0.3s;
+                    &:hover{
+                        scale: 1.6;
+                    }
+                }
+            }
+        }
+        .general--living{
+            background-color: rgb(236, 233, 227);
+            border-radius: $br-10;
+            .L1{
+                background-image: url('../assets/productos/living/gabinete.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .L2{
+                background-image: url('../assets/productos/living/gabdoble.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .L3{
+                background-image: url('../assets/productos/living/mesa.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .L4{
+                background-image: url('../assets/productos/living/rack.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .L5{
+                background-image: url('../assets/productos/living/ratona.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .L6{
+                background-image: url('../assets/productos/living/mesaapoyo.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .general--dormitorio{
+            background-color: rgb(231, 213, 216);
+            border-radius: $br-10;
+            .D1{
+                background-image: url('../assets/productos/dormitorio/banco.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .D2{
+                background-image: url('../assets/productos/dormitorio/cama.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .D3{
+                background-image: url('../assets/productos/dormitorio/cama2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .D4{
+                background-image: url('../assets/productos/dormitorio/comoda.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .D5{
+                background-image: url('../assets/productos/dormitorio/comoda2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .D6{
+                background-image: url('../assets/productos/dormitorio/mesaluz.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .general--despacho{
+            background-color: rgb(188, 211, 188);
+            border-radius: $br-10;
+            .O1{
+                background-image: url('../assets/productos/oficina/escritorio1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .O2{
+                background-image: url('../assets/productos/oficina/escritorio2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .O3{
+                background-image: url('../assets/productos/oficina/escritorio3.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .O4{
+                background-image: url('../assets/productos/oficina/gabinete1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .O5{
+                background-image: url('../assets/productos/oficina/gabinete2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .O6{
+                background-image: url('../assets/productos/oficina/lamp1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .general--comedor{
+            background-color: rgb(214, 199, 216);
+            border-radius: $br-10;
+            .C1{
+                background-image: url('../assets/productos/comedor/mesa1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .C2{
+                background-image: url('../assets/productos/comedor/mesa2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .C3{
+                background-image: url('../assets/productos/comedor/mesa3.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .C4{
+                background-image: url('../assets/productos/comedor/mesa4.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .C5{
+                background-image: url('../assets/productos/comedor/silla1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .C6{
+                background-image: url('../assets/productos/comedor/silla2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .general--muebles_infantiles{
+            background-color: rgb(232, 235, 191);
+            border-radius: $br-10;
+            .I1{
+                background-image: url('../assets/productos/muebles_infantiles/cuna1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .I2{
+                background-image: url('../assets/productos/muebles_infantiles/cuna2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .I3{
+                background-image: url('../assets/productos/muebles_infantiles/cuna3.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .I4{
+                background-image: url('../assets/productos/muebles_infantiles/juego1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .I5{
+                background-image: url('../assets/productos/muebles_infantiles/juego2.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .I6{
+                background-image: url('../assets/productos/muebles_infantiles/juego3.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        p{
+            font-size: $fs-lg;
+            font-weight: $fw-bold;
+        }
+    }
+}

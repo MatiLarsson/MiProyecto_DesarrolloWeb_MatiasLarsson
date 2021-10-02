@@ -1,0 +1,75 @@
+#header{
+	position: relative;
+	min-height: 6rem;
+	top: 0;
+	border-bottom: 0.2rem solid $color-1;
+    z-index: 100;
+    background-image: $grad-1;
+    nav{
+        padding-left: 15%;
+        height: 100%;
+        width: 100%;
+        background-color: transparent !important;
+        div{
+            ul{
+                li{
+                    div{
+                        margin-top: 1rem;
+                        border: transparent !important;
+                        background: $color-4 !important;
+                        border-radius: $br-5;
+                        a{
+                            border: transparent !important;
+                            background: $color-4 !important;
+                            transition: all 0.1s;
+                            border-radius: $br-5;
+                            font-size: $fs-sm;
+                            &:hover{
+                                scale: 1.1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo{
+        transition: scale 0.4s;
+        &:hover{
+            scale: 1.1;
+        }
+        img{
+	        width: 80px;
+        }
+    }
+    .navegacion{
+        ul{
+            li{
+                transition: all 0.4s;
+                color: $color-1 !important;
+                &:hover{
+                    scale: 1.1;
+                    font-weight: $fw-bold;
+                }
+                a{
+                    color: $color-1 !important;
+                }
+            }
+        }
+    }
+    .sideButton{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        img{
+            width: 20px;
+            transition: scale .4s;
+            &:hover{
+                scale: 1.2;
+            }
+        }
+    }
+}
+

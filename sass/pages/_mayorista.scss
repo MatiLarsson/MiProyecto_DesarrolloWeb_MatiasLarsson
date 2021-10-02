@@ -1,0 +1,68 @@
+#main{
+    .contenedorMayoristas{
+        border-top: 1rem solid $color-5;
+        border-bottom: 1rem solid $color-5;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: $fs-lg;
+            font-weight: $fw-bold;
+        }
+        .sideBySide{
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: center;
+            width: 100%;
+            border-top: 1rem solid $color-5;
+            form{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                width: 100%;
+                min-height: 20rem;
+                padding-left: 10rem;
+                box-sizing: border-box;
+                label{
+                    font-weight: $fw-light;
+                }
+                input{
+                    transition: all 0.3s;
+                    &:focus{
+                        scale: 1.2;
+                    }
+                }
+            }
+            @media screen and (min-width: 992px){
+                form{
+                    width: 50%;
+                    padding: 1rem;
+                }
+            }
+            .backgroundMayoristas{
+                width: 100%;
+                background-image: url('../assets/backgroundmayoristas.jpg');
+                min-height: 500px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            @media screen and (min-width: 992px){
+                .backgroundMayoristas{
+                    width: 50%;
+                }
+            }
+        }
+        @media screen and (min-width: 992px){
+                .sideBySide{
+                    flex-direction: row;
+                }
+        }
+    }
+}

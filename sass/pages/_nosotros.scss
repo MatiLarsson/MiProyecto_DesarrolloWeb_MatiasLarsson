@@ -1,0 +1,198 @@
+#main{
+    width: 100%;
+    .empresa{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        .sInicial{
+            border-top: 0.5rem solid $color-5;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            .backgroundFabrica{
+                width: 100%;
+                min-height: 450px;
+                max-height: 45vh;
+                background-image: url('../assets/nosotros/fabrica-panoramica.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .location{
+                border: 1rem solid $color-4;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                min-height: 200px;
+                max-height: 35vh;
+            }
+        }
+        .sHistoria{
+            border-top: 0.5rem solid $color-5;
+            width: 100%;
+            min-height: 500px;
+            max-height: 50vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            align-content: stretch;
+            .redaccion1{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: flex-start;
+                header{
+                    p{
+                        font-size: $fs-lg;
+                        font-weight: $fw-bold;
+                    }
+                }
+            }
+            .fotoHistoria{
+                width: 50%;
+                min-height: 500px;
+                max-height: 50vh;
+                background-image: url('../assets/nosotros/antigua.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            div{
+                div{
+                    p{
+                        font-style: italic;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        .sFabrica{
+            border-top: 0.5rem solid $color-5;
+            width: 100%;
+            min-height: 500px;
+            max-height: 50vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            align-content: stretch;
+            .fotoOperario{
+                width: 50%;
+                min-height: 500px;
+                max-height: 50vh;
+                background-image: url('../assets/nosotros/operario.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            div{
+                div{
+                    p{
+                        font-style: italic;
+                        text-align: justify;
+                        span{
+                            font-weight: $fw-bold;
+                        }
+                    }
+                }
+            }
+            .redaccion2{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: flex-start;
+                header{
+                    p{
+                        font-size: $fs-lg;
+                        font-weight: $fw-bold;
+                    }
+                }
+            }
+        }
+        .sEquipo{
+            border-top: 0.5rem solid $color-5;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            align-content: stretch;
+            min-height: 500px;
+            max-height: 50vh;
+            .redaccion3{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: flex-start;
+                header{
+                    p{
+                        font-size: $fs-lg;
+                        font-weight: $fw-bold;
+                    }
+                }
+            }
+            .fotoEquipo1{
+                width: 50%;
+                min-height: 500px;
+                max-height: 50vh;
+                background-image: url('../assets/nosotros/operario-pintura.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            div{
+                div{
+                    p{
+                        font-style: italic;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        .tallerDeFondo{
+            border-top: 0.5rem solid $color-5;
+            border-bottom: 0.5rem solid $color-5;
+            width: 100%;
+            min-height: 16rem;
+            max-height: 30vh;
+            box-sizing: border-box;
+            .fotoTaller{
+                border-top: 2rem solid $color-4;
+                border-bottom: 2rem solid $color-4;
+                width: 100%;
+                min-height: 15rem;
+                max-height: 30vh;
+                background-image: url('../assets/nosotros/taller.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-sizing: border-box;
+                .veloGris{
+                    position: absolute;
+                    width: 100vw;
+                    min-height: 11rem;
+                    max-height: 30vh;
+                    background-color: $color-5;
+                    z-index: 100;
+                    opacity: 25%;
+                }
+            }
+        }
+    }
+}

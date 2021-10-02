@@ -1,0 +1,81 @@
+#main{
+    .formularioContacto{
+        background-image: url('../assets/background4.jpg');
+        width: 100vw;
+        height: 70vh;
+        min-height: 800px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-top: 1rem solid $color-5;
+        border-bottom: 1rem solid $color-5;
+        border-radius: $br-5;
+        .formularioContacto_campo{
+            max-width: 50vw;
+            max-height: 20vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+            border-style: none;
+            div{           
+                .campo--datosUsuario{
+                    background-color: $color-3;
+                    border-radius: $br-10;
+                    legend{
+                        font-size: $fs-lg;
+                        font-weight: $fw-bold;
+                    }
+                    input{
+                        transition: all 0.3s;
+                        &:focus{
+                            scale: 1.2;
+                        }
+                    }
+                    label{
+                        margin: 1rem;
+                    }
+                }
+                .campo--consulta{
+                    background-color: $color-3;
+                    border-radius: $br-10;
+                    legend{
+                        font-size: $fs-lg;
+                        font-weight: $fw-bold;
+                    }
+                    input{
+                        transition: all 0.3s;
+                        &:focus{
+                            scale: 1.2;
+                        }
+                    }
+                    label{
+                        margin: 1rem;
+                    }
+                }
+                .campo--legal{
+                    background-color: $color-5;
+                    border-radius: $br-10;
+                    label{
+                        font-size: $fs-sm;
+                        font-weight: $fw-light;
+                    }
+                }
+                .campo--botones{
+                    background-color: $color-3;
+                    border-radius: $br-10;
+                    .limpiar{
+                        background-color: $color-5;
+                        border-radius: $br-5;
+                    }
+                    .enviar{
+                        background-color: $color-4;
+                        border-radius: $br-5;
+                    }
+                }
+            }
+        }
+    }
+}
