@@ -49,7 +49,6 @@
             width: 100%;
             padding: 1rem;
             box-sizing: border-box;
-            /*
             @keyframes animaFondo{
                 0%{
                     background-position: 5% 0%;
@@ -61,15 +60,15 @@
                     background-position: 5% 0%;
                 }
             }
-            background: linear-gradient(114.34deg, $color-2 0%, $color-3 9.13%, $color-4 23.49%, $color-5 37.81%, rgb(231, 105, 231) 51.25%, rgb(240, 93, 166) 68.38%, rgb(231, 208, 105) 82.32%, rgb(105, 231, 122) 92.08%, rgb(90,180,80)) !important;
-            border-color: transparent !important;
+            background: linear-gradient(114.34deg, $color-3 0%, $color-2 5%, $color-3 9.13%, $color-4 23.49%, $color-5 37.81%, rgb(231, 105, 231) 51.25%, rgb(240, 93, 166) 68.38%, rgb(231, 208, 105) 82.32%, rgb(105, 231, 122) 92.08%, rgb(90,180,80)) !important;
+            
             border-radius: $br-5;
             color: $color-1 !important;
             animation-name: animaFondo;
             animation-iteration-count: infinite !important;
             animation-duration: 42s !important;
             animation-delay: 0 !important;
-            background-size: 1000% 1000% !important; */
+            background-size: 1000% 1000% !important;
             .card--A{
                 background-color: $color-4 !important;
                 opacity: 85%;
@@ -296,7 +295,7 @@
                     input{
                         transition: all 0.2s;
                         &:focus{
-                            scale: 1.2;
+                            scale: 1.1;
                         }
                     }
                     .form-check-input{

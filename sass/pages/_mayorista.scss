@@ -27,7 +27,7 @@
                 align-items: flex-start;
                 width: 100%;
                 min-height: 20rem;
-                padding-left: 10rem;
+                padding-left: 2rem;
                 box-sizing: border-box;
                 label{
                     font-weight: $fw-light;
@@ -42,7 +42,7 @@
             @media screen and (min-width: 992px){
                 form{
                     width: 50%;
-                    padding: 1rem;
+                    padding-left: 4rem;
                 }
             }
             .backgroundMayoristas{
@@ -52,10 +52,12 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
+                border-radius: $br-5;
             }
             @media screen and (min-width: 992px){
                 .backgroundMayoristas{
                     width: 50%;
+                    border-radius: 0;
                 }
             }
         }

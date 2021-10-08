@@ -409,27 +409,42 @@ body {
   padding: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /*
-            @keyframes animaFondo{
-                0%{
-                    background-position: 5% 0%;
-                }
-                50%{
-                    background-position: 96% 0%;
-                }
-                100%{
-                    background-position: 5% 0%;
-                }
-            }
-            background: linear-gradient(114.34deg, $color-2 0%, $color-3 9.13%, $color-4 23.49%, $color-5 37.81%, rgb(231, 105, 231) 51.25%, rgb(240, 93, 166) 68.38%, rgb(231, 208, 105) 82.32%, rgb(105, 231, 122) 92.08%, rgb(90,180,80)) !important;
-            border-color: transparent !important;
-            border-radius: $br-5;
-            color: $color-1 !important;
-            animation-name: animaFondo;
-            animation-iteration-count: infinite !important;
-            animation-duration: 42s !important;
-            animation-delay: 0 !important;
-            background-size: 1000% 1000% !important; */
+  background: linear-gradient(114.34deg, #FFFFFF 0%, #3C6E71 5%, #FFFFFF 9.13%, #D9D9D9 23.49%, #284B63 37.81%, #e769e7 51.25%, #f05da6 68.38%, #e7d069 82.32%, #69e77a 92.08%, #5ab450) !important;
+  border-radius: 5px;
+  color: #353535 !important;
+  -webkit-animation-name: animaFondo;
+          animation-name: animaFondo;
+  -webkit-animation-iteration-count: infinite !important;
+          animation-iteration-count: infinite !important;
+  -webkit-animation-duration: 42s !important;
+          animation-duration: 42s !important;
+  -webkit-animation-delay: 0 !important;
+          animation-delay: 0 !important;
+  background-size: 1000% 1000% !important;
+}
+
+@-webkit-keyframes animaFondo {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 0%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
+}
+
+@keyframes animaFondo {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 0%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
 }
 
 #main .sBienvenida .displayInfo .card--A {
@@ -728,7 +743,7 @@ body {
 }
 
 #main .sRegistro div form div input:focus {
-  scale: 1.2;
+  scale: 1.1;
 }
 
 #main .sRegistro div form div .form-check-input {
@@ -1216,7 +1231,7 @@ body {
 }
 
 #main .formularioContacto .formularioContacto_campo div .campo--datosUsuario input:focus {
-  scale: 1.2;
+  scale: 1.1;
 }
 
 #main .formularioContacto .formularioContacto_campo div .campo--datosUsuario label {
@@ -1239,7 +1254,7 @@ body {
 }
 
 #main .formularioContacto .formularioContacto_campo div .campo--consulta input:focus {
-  scale: 1.2;
+  scale: 1.1;
 }
 
 #main .formularioContacto .formularioContacto_campo div .campo--consulta label {
@@ -1657,7 +1672,7 @@ body {
           align-items: flex-start;
   width: 100%;
   min-height: 20rem;
-  padding-left: 10rem;
+  padding-left: 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1678,7 +1693,7 @@ body {
 @media screen and (min-width: 992px) {
   #main .contenedorMayoristas .sideBySide form {
     width: 50%;
-    padding: 1rem;
+    padding-left: 4rem;
   }
 }
 
@@ -1689,11 +1704,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 992px) {
   #main .contenedorMayoristas .sideBySide .backgroundMayoristas {
     width: 50%;
+    border-radius: 0;
   }
 }
 
@@ -1749,12 +1766,18 @@ body {
 
 #main .empresa .sInicial .backgroundFabrica {
   width: 100%;
-  min-height: 450px;
+  min-height: 250px;
   max-height: 45vh;
   background-image: url("../assets/nosotros/fabrica-panoramica.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 960px) {
+  #main .empresa .sInicial .backgroundFabrica {
+    min-height: 450px;
+  }
 }
 
 #main .empresa .sInicial .location {
@@ -1781,15 +1804,14 @@ body {
 #main .empresa .sHistoria {
   border-top: 0.5rem solid #284B63;
   width: 100%;
-  min-height: 500px;
-  max-height: 50vh;
+  max-height: 110vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: stretch;
@@ -1800,7 +1822,7 @@ body {
 }
 
 #main .empresa .sHistoria .redaccion1 {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1810,19 +1832,20 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }
 
 #main .empresa .sHistoria .redaccion1 header p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 #main .empresa .sHistoria .fotoHistoria {
-  width: 50%;
+  width: 100%;
   min-height: 500px;
   max-height: 50vh;
   background-image: url("../assets/nosotros/antigua.jpg");
@@ -1834,20 +1857,44 @@ body {
 #main .empresa .sHistoria div div p {
   font-style: italic;
   text-align: justify;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1200px) {
+  #main .empresa .sHistoria {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 500px;
+    max-height: 50vh;
+  }
+  #main .empresa .sHistoria .redaccion1 {
+    width: 50%;
+  }
+  #main .empresa .sHistoria .redaccion1 header p {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  #main .empresa .sHistoria .fotoHistoria {
+    width: 50%;
+  }
+  #main .empresa .sHistoria div div p {
+    font-size: 1rem;
+  }
 }
 
 #main .empresa .sFabrica {
   border-top: 0.5rem solid #284B63;
   width: 100%;
-  min-height: 500px;
-  max-height: 50vh;
+  max-height: 150vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: stretch;
@@ -1858,7 +1905,7 @@ body {
 }
 
 #main .empresa .sFabrica .fotoOperario {
-  width: 50%;
+  width: 100%;
   min-height: 500px;
   max-height: 50vh;
   background-image: url("../assets/nosotros/operario.png");
@@ -1870,6 +1917,7 @@ body {
 #main .empresa .sFabrica div div p {
   font-style: italic;
   text-align: justify;
+  font-size: 0.8rem;
 }
 
 #main .empresa .sFabrica div div p span {
@@ -1877,7 +1925,7 @@ body {
 }
 
 #main .empresa .sFabrica .redaccion2 {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1887,27 +1935,53 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }
 
 #main .empresa .sFabrica .redaccion2 header p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+  #main .empresa .sFabrica {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 500px;
+    max-height: 50vh;
+  }
+  #main .empresa .sFabrica .redaccion2 {
+    width: 50%;
+  }
+  #main .empresa .sFabrica .redaccion2 header p {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  #main .empresa .sFabrica .fotoOperario {
+    width: 50%;
+  }
+  #main .empresa .sFabrica div div p {
+    font-size: 1rem;
+  }
 }
 
 #main .empresa .sEquipo {
   border-top: 0.5rem solid #284B63;
   width: 100%;
+  max-height: 110vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: stretch;
@@ -1915,12 +1989,10 @@ body {
           justify-content: stretch;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  min-height: 500px;
-  max-height: 50vh;
 }
 
 #main .empresa .sEquipo .redaccion3 {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1930,19 +2002,20 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }
 
 #main .empresa .sEquipo .redaccion3 header p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 #main .empresa .sEquipo .fotoEquipo1 {
-  width: 50%;
+  width: 100%;
   min-height: 500px;
   max-height: 50vh;
   background-image: url("../assets/nosotros/operario-pintura.png");
@@ -1954,6 +2027,31 @@ body {
 #main .empresa .sEquipo div div p {
   font-style: italic;
   text-align: justify;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1200px) {
+  #main .empresa .sEquipo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 500px;
+    max-height: 50vh;
+  }
+  #main .empresa .sEquipo .redaccion3 {
+    width: 50%;
+  }
+  #main .empresa .sEquipo .redaccion3 header p {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  #main .empresa .sEquipo .fotoEquipo1 {
+    width: 50%;
+  }
+  #main .empresa .sEquipo div div p {
+    font-size: 1rem;
+  }
 }
 
 #main .empresa .tallerDeFondo {
