@@ -61,23 +61,23 @@
 		</nav>
 	</div>
 	<div id="main">
-		<form class="formularioContacto container my-2 row">
+		<form class="formularioContacto needs-validation container my-2 row">
 			<div class="col-12 col-md-6">
-				<fieldset class="formularioContacto__campo campo--datosUsuario">
+				<fieldset class="formularioContacto__campo campo--datosUsuario" method="POST" action="email.php" novalidate>
 				<legend class="textUpper">Mis datos</legend>
 					<label for="nombre" class="">Nombre:</label>
-					<input type="text" name="nombre" class="form-control"/>
+					<input type="text" name="nombre" class="form-control" required/>
 					<label for="apellido" class="">Apellido:</label>
-					<input type="text" name="apellido" class="form-control"/>
+					<input type="text" name="apellido" class="form-control" required/>
 					<label for="correo" class="">Correo electrónico:</label>
-					<input type="email" name="correo" placeholder="@" class="form-control"/>
+					<input type="email" name="correo" placeholder="@" class="form-control" required/>
 				</fieldset>
 			</div>
 			<div class="col-12 col-md-6">
 				<fieldset class="formularioContacto__campo campo--consulta">
 					<legend class="textUpper">Consulta</legend>
 					<label for="validationDefault04">El motivo de mi consulta es:</label>
-					<select class="custom-select" id="validationDefault04" required>
+					<select name="motivo" class="custom-select" id="validationDefault04" required>
 						<option selected disabled value="">Elige una opción...</option>
 						<option>Deseo consultar por el estado de mi compra</option>
 						<option>Tengo un problema con mi compra</option>
@@ -86,14 +86,14 @@
 						<option>Otro</option>
 					</select>
 					<label for="mensaje" class="">Mensaje:</label>
-					<textarea name="mensaje" placeholder="Escribe aquí tu mensaje" class="form-control"></textarea>
+					<textarea name="mensaje" placeholder="Escribe aquí tu mensaje" class="form-control" required></textarea>
 				</fieldset>
 				<fieldset class="formularioContacto__campo campo--legal">
 					<label for="legales"  class="">Aceptar T&C</label>
-					<input type="checkbox" name="legales" value="1"/>
+					<input name="tyc" type="checkbox" name="legales" value="1" required/>
 					<br>
 					<label for="suscripcion" class="">Suscribirme al Newsletter</label>
-					<input type="checkbox" name="suscripcion" value="1"/>
+					<input name="nl" type="checkbox" name="suscripcion" value="1"/>
 				</fieldset>
 				<fieldset class="formularioContacto__campo campo--botones mt-2">
 					<input type="reset" value="Limpiar formulario" class="limpiar btn btn-primary btn-lg"/>
@@ -102,41 +102,64 @@
 			</div>			
 		</form>
 	</div>
-	<div id="footer" class="">
-		<nav aria-label="breadcrumb" class="mt-1">
-			<ol class="breadcrumb">
+	<div id="footer" class="container-fluid">
+		<nav aria-label="breadcrumb" class="row justify-content-center mt-1">
+			<ol class="col-12 breadcrumb d-flex justify-content-center">
 				<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
 				<li class="breadcrumb-item active" aria-current="page">Contacto</li>
 			</ol>
 		</nav>
-		<div class="contactChannels mt-2">
-			<a href="mailto:name@rapidtables.com"><p class="text-center"><img src="../assets/email.png" alt="icono de email"></p></a>
-			<a href="../index.html"><p class="text-center"><img src="../assets/whatsapp.png" alt="icono de email"></p></a>
-		</div>
 		<div class="footerText row">
-			<div class="footerMenu mt-2 col-12 col-sm-6">
-				<p class="">Menú de acceso rápido</p>
-				<ul>
-					<li><a href="../pages/categoria.html">Productos</a></li>
-					<li><a href="../pages/mayorista.html">Mayorista</a></li>
-					<li><a href="../pages/novedades.html">Novedades</a></li>
-					<li><a href="../pages/nosotros.html">Nosotros</a></li>
-					<li><a href="../pages/contacto.html">Contacto</a></li>
+			<div class="footerMenu col-12 col-md-4 d-flex flex-column justify-content-start align-content-center">
+				<p class="mt-2 text-center">Menú de acceso rápido</p>
+				<ul class="d-flex flex-column justify-content-start align-content-center mt-2">
+					<li><a href="categoria.html"><p class="text-center">Productos</p></a></li>
+					<li><a href="mayorista.html"><p class="text-center">Mayorista</p></a></li>
+					<li><a href="novedades.html"><p class="text-center">Novedades</p></a></li>
+					<li><a href="nosotros.html"><p class="text-center">Nosotros</p></a></li>
+					<li><a href="contacto.html"><p class="text-center">Contacto</p></a></li>
 				</ul>
 			</div>
-			<div class="footerMenu mt-2 col-12 col-sm-6">
-				<p class="">Nuestras categorías</p>
-				<ul>
-					<li><a href="../pages/categoria.html#living">Living</a></li>
-					<li><a href="../pages/categoria.html#dormitorio">Dormitorio</a></li>
-					<li><a href="../pages/categoria.html#despacho">Despacho</a></li>
-					<li><a href="../pages/categoria.html#comedor">Comedor</a></li>
-					<li><a href="../pages/categoria.html#muebles_infantiles">Muebles infantiles</a></li>
+			<div class="footerMenu col-12 col-md-4 d-flex flex-column justify-content-start align-content-center">
+				<p class="mt-2 text-center">Nuestras categorías</p>
+				<ul class="d-flex flex-column justify-content-start align-content-center mt-2">
+					<li><a href="categoria.html#living"><p class="text-center">Living</p></a></li>
+					<li><a href="categoria.html#dormitorio"><p class="text-center">Dormitorio</p></a></li>
+					<li><a href="categoria.html#despacho"><p class="text-center">Despacho</p></a></li>
+					<li><a href="categoria.html#comedor"><p class="text-center">Comedor</p></a></li>
+					<li><a href="categoria.html#muebles_infantiles"><p class="text-center">Muebles infantiles</p></a></li>
 				</ul>
+			</div>
+			<div class="contactChannels col-12 col-md-4 d-flex flex-column justify-content-start align-content-center mt-2">
+				<div class="d-flex flex-row flex-md-column justify-content-center align-content-center p-5">
+					<a href="mailto:name@rapidtables.com"><p class="text-center p-2"><img src="../assets/email.png" alt="icono de email"></p></a>
+					<a href="https://www.whatsapp.com" target="_blank"><p class="text-center p-2"><img src="../assets/whatsapp.png" alt="icono de whatsapp"></p></a>
+					<a href="https://www.instagram.com" target="_blank"><p class="text-center p-2"><img src="../assets/instagram.png" alt="icono de instagram"></p></a>
+				</div>
 			</div>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	
+	<script>
+	// Example starter JavaScript for disabling form submissions if there are invalid fields
+	(function() {
+		'use strict';
+		window.addEventListener('load', function() {
+		// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		var forms = document.getElementsByClassName('needs-validation');
+		// Loop over them and prevent submission
+		var validation = Array.prototype.filter.call(forms, function(form) {
+			form.addEventListener('submit', function(event) {
+			if (form.checkValidity() === false) {
+				event.preventDefault();
+				event.stopPropagation();
+			}
+			form.classList.add('was-validated');
+			}, false);
+		});
+		}, false);
+	})();
+	</script>
 </body>
 </html>

@@ -30,12 +30,15 @@
                 padding-left: 2rem;
                 box-sizing: border-box;
                 label{
-                    font-weight: $fw-light;
+                    font-weight: $fw-bold;
                 }
-                input{
-                    transition: all 0.3s;
-                    &:focus{
-                        scale: 1.2;
+                a{
+                    text-decoration: none;
+                    input{
+                        transition: all 0.3s;
+                        &:focus{
+                            scale: 1.2;
+                        }
                     }
                 }
             }

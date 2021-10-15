@@ -60,8 +60,7 @@
                     background-position: 5% 0%;
                 }
             }
-            background: linear-gradient(114.34deg, $color-3 0%, $color-2 5%, $color-3 9.13%, $color-4 23.49%, $color-5 37.81%, rgb(231, 105, 231) 51.25%, rgb(240, 93, 166) 68.38%, rgb(231, 208, 105) 82.32%, rgb(105, 231, 122) 92.08%, rgb(90,180,80)) !important;
-            
+            background: linear-gradient(114.34deg, $color-3 0%, $color-2 5%, $color-3 9.13%, $color-4 23.49%, $color-5 37.81%, rgb(231, 105, 231) 51.25%, rgb(240, 93, 166) 68.38%, rgb(231, 208, 105) 82.32%, rgb(105, 231, 122) 92.08%, rgb(90,180,80)) !important;            
             border-radius: $br-5;
             color: $color-1 !important;
             animation-name: animaFondo;
@@ -293,6 +292,8 @@
                 align-content: center;
                 div{
                     input{
+                        max-width: 90vw;
+                        margin: auto;
                         transition: all 0.2s;
                         &:focus{
                             scale: 1.1;
@@ -307,9 +308,11 @@
                     background-color: $color-4;
                     color: $color-1;
                     border: 3px solid $color-2;
+                    max-width: 90vw;
+                    margin: auto;
                     transition: all 0.2s;
                     &:hover{
-                        scale: 1.2;
+                        scale: 1.1;
                     }
                 }
             }
