@@ -12,6 +12,27 @@
             height: 50px;
             transition: all 0.2s;
             margin: auto;
+            @keyframes tic{
+                0%{
+                    transform: rotate(0deg);
+                }
+                40%{
+                    transform: rotate(0deg);
+                }
+                45%{
+                    transform: rotate(35deg);
+                }
+                55%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(0deg);
+                }
+            }
+            animation-name: tic;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            animation-delay: 0;
             &:hover{
                 scale: 1.1;
             }

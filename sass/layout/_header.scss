@@ -58,14 +58,33 @@
         }
     }
     .sideButton{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: center;
         img{
             width: 20px;
             transition: scale .4s;
+            @keyframes jump{
+                0%{
+                    transform: translate(0px, 0px);
+                }
+                42%{
+                    transform: translate(0px, 0px);
+                }
+                45%{
+                    transform: translate(0px, -8px);
+                }
+                49%{
+                    transform: translate(0px, 2px);
+                }
+                52%{
+                    transform: translate(0px, 0px);
+                }
+                100%{
+                    transform: translate(0px, 0px);
+                }
+            }
+            animation-name: jump;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            animation-delay: 0;
             &:hover{
                 scale: 1.2;
             }

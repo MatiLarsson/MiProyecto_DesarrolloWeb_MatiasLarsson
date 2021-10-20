@@ -1,11 +1,7 @@
 #main{
     .destacado{
         width: 100%;
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: center;
         header{
             width: 100%;
             border-bottom: 0.5rem solid $color-5;
@@ -16,26 +12,13 @@
         }
         .destacadoGaleria{
             width: 100%;
-            display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-content: center;
             div{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-content: center;
                 h3{
                     font-size: $fs-sm;
                     color: rgb(26, 196, 26);
                 }
                 .destacado1{
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                    align-content: center;
                     width: 16rem;
                     height: 16rem;
                     background-image: url('../assets/destacados/mesa.jpg');
@@ -50,10 +33,6 @@
                 }
             }
             div{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-content: center;
                 h3{
                     font-size: $fs-sm;
                     color: rgb(26, 196, 26);
@@ -73,10 +52,6 @@
                 }
             }
             div{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-content: center;
                 h3{
                     font-size: $fs-sm;
                     color: rgb(26, 196, 26);
@@ -98,26 +73,13 @@
         }
         .ofertaGaleria{
             width: 100%;
-            display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-content: center;
             div{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-content: center;
                 h3{
                     font-size: $fs-sm;
                     color: rgb(26, 196, 26);
                 }
                 .oferta1{
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                    align-content: center;
                     width: 16rem;
                     height: 16rem;
                     background-image: url('../assets/ofertas/oferta1.jpg');
@@ -130,15 +92,11 @@
                         scale: 1.1;
                     }
                 }
-                p{
+                .tachado{
                     text-decoration: line-through;
                 }
             }
             div{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-content: center;
                 h3{
                     font-size: $fs-sm;
                     color: rgb(26, 196, 26);
@@ -156,15 +114,11 @@
                         scale: 1.1;
                     }
                 }
-                p{
+                .tachado{
                     text-decoration: line-through;
                 }
             }
             div{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-content: center;
                 h3{
                     font-size: $fs-sm;
                     color: rgb(26, 196, 26);
@@ -182,7 +136,7 @@
                         scale: 1.1;
                     }
                 }
-                p{
+                .tachado{
                     text-decoration: line-through;
                 }
             }

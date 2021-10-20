@@ -1,16 +1,6 @@
 #main{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-content: center;
 	flex-basis: 1200px;
     .sBienvenida{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
         border-bottom: 0.5rem solid $color-4;
         .mainImage1{
             background-image: url('../assets/background1.jpg');
@@ -20,16 +10,11 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-content: center;
             border-top: 1rem solid $color-5;
             border-bottom: 1rem solid $color-5;
             a{
                 text-decoration: none;
                 h1{
-                    margin-bottom: 1rem;
                     color: $color-3;
                     font-size: $fs-lg;
                     font-weight: $fw-bold;
@@ -41,33 +26,11 @@
             }
         }
         .displayInfo{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
             width: 100%;
-            padding: 1rem;
             box-sizing: border-box;
-            @keyframes animaFondo{
-                0%{
-                    background-position: 5% 0%;
-                }
-                50%{
-                    background-position: 96% 0%;
-                }
-                100%{
-                    background-position: 5% 0%;
-                }
-            }
-            background: linear-gradient(114.34deg, $color-3 0%, $color-2 5%, $color-3 9.13%, $color-4 23.49%, $color-5 37.81%, rgb(231, 105, 231) 51.25%, rgb(240, 93, 166) 68.38%, rgb(231, 208, 105) 82.32%, rgb(105, 231, 122) 92.08%, rgb(90,180,80)) !important;            
+            background: linear-gradient(114.34deg, $color-3 0%, $color-2 50%, $color-3 100%);            
             border-radius: $br-5;
             color: $color-1 !important;
-            animation-name: animaFondo;
-            animation-iteration-count: infinite !important;
-            animation-duration: 42s !important;
-            animation-delay: 0 !important;
-            background-size: 1000% 1000% !important;
             .card--A{
                 background-color: $color-4 !important;
                 opacity: 85%;
@@ -115,16 +78,11 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
         .carouselContainer1{
             max-width: 30rem;
             div{
                 h1{
-                    margin-bottom: 1rem;
                     color: $color-1;
                     font-size: $fs-lg;
                     font-weight: $fw-bold;
@@ -139,7 +97,6 @@
                 a{
                     text-decoration: none;
                     p{
-                        margin-bottom: 1rem;
                         color: $color-1;
                         font-size: $fs-lg;
                         font-weight: $fw-bold;
@@ -153,9 +110,7 @@
         }    
     }
     .sIntermedia{
-        display: block;
         box-sizing: border-box;
-        align-items: center;
         width: 100%;
         border-top: 0.5rem solid $color-5;
         border-bottom: 0.5rem solid $color-5;
@@ -168,15 +123,9 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-content: center;
             div{
                 width: 50%;
                 box-sizing: border-box;
-                padding: 1rem;
                 p{
                     font-size: $fs-lg;
                     color: $color-3;
@@ -191,17 +140,12 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
         border-bottom: 0.5rem solid $color-4;
         .carouselContainer2{
             max-width: 30rem;
             div{
                 h2{
-                    margin-bottom: 1rem;
                     color: $color-1;
                     font-size: $fs-lg;
                     font-weight: $fw-bold;
@@ -216,7 +160,6 @@
                 a{
                     text-decoration: none;
                     p{
-                        margin-bottom: 1rem;
                         color: $color-1;
                         font-size: $fs-lg;
                         font-weight: $fw-bold;
@@ -235,11 +178,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
         border-bottom: 0.5rem solid $color-4;
         div{
             header{
@@ -260,36 +199,18 @@
                 }
                 a{
                     text-decoration: none;
-                    p{
-                        margin-bottom: 1rem;
-                        color: $color-1;
-                        font-size: $fs-lg;
-                        font-weight: $fw-bold;
-                        transition: all 0.3s;
-                        &:hover{
-                            scale: 1.1;
-                        }
-                    }
                 }
             }
         }   
     }
     .sRegistro{
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: center;
         border-radius: $br-5;
         background-color: $color-5;
         max-height: 300px;
         div{
             form{
-                display: flex;
-                flex-direction: column;
                 flex-wrap: wrap;
-                justify-content: center;
-                align-content: center;
                 div{
                     input{
                         max-width: 90vw;

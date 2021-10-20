@@ -45,7 +45,7 @@
 					<li class="nav-item">
 						<a class="nav-link" href="pages/contacto.html">Contacto</a>
 					</li>
-					<div class="sideButton">
+					<div class="sideButton d-flex flex-row justify-content-start align-content-center">
 						<li class="nav-item mx-2"> 
 							<a href="pages/deseados.html"><img src="assets/deseados.png" alt="Botón de lista de deseados"></a>
 						</li>
@@ -60,16 +60,16 @@
 			</div>
 		</nav>
 	</div>
-	<div id="main" class="">
-		<div class="sBienvenida container-fluid px-0 mt-1">
-			<div class="mainImage1 animate__animated animate__fadeIn">
+	<div id="main" class="d-flex flex-column justify-content-start align-content-center">
+		<div class="sBienvenida container-fluid px-0 mt-1 d-flex flex-column justify-content-start align-content-center">
+			<div class="mainImage1 animate__animated animate__fadeIn d-flex flex-column justify-content-end align-content-center">
 				<header>
 					<a href="pages/categoria.html">
-						<h1 class="text-center textUpper animate__animated animate__fadeInUp">Muébles nórdicos y escandinavos</h1>
+						<h1 class="text-center textUpper animate__animated animate__fadeInUp mb-1">Muébles nórdicos y escandinavos</h1>
 					</a>
 				</header>	
 			</div>
-			<div class="displayInfo animate__animated animate__bounceInUp my-3">
+			<div class="displayInfo animate__animated animate__bounceInUp my-3 p-1 d-flex flex-row justify-content-center align-content-center">
 				<div class="card card--A text-white bg-primary mb-3 mx-3" style="max-width: 18rem;">
 					<div class="card-header">
 						<h2>Muebles para todos tus ambientes</h2>
@@ -96,11 +96,11 @@
 				</div>
 			</div> 
 		</div>
-		<div class="sDestacados container">
+		<div class="sDestacados container d-flex flex-column justify-content-center align-content-center">
 			<div class="carouselContainer1 my-3">
 				<header>
 					<div class="">
-						<h1 class="text-center textUpper animate__animated animate__fadeInUp">Muebles destacados | Ofertas exclusivas</h1>
+						<h1 class="text-center textUpper animate__animated animate__fadeInUp mb-1">Muebles destacados | Ofertas exclusivas</h1>
 					</div>
 				</header>	
 				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -126,26 +126,26 @@
 				</div>
 				<div class="">
 					<a href="pages/destacados.html">
-						<p class="text-center textUpper animate__animated animate__fadeInUp">Ver todos</p>
+						<p class="text-center textUpper animate__animated animate__fadeInUp mb-1">Ver todos</p>
 					</a>
 				</div>
 			</div>
 		</div>
-		<div class="sIntermedia container-fluid px-0">
-			<div class="mainImage2">
-				<div>
+		<div class="sIntermedia container-fluid px-0 d-block align-items-center">
+			<div class="mainImage2 d-flex flex-row justify-content-between align-items-center">
+				<div class="p-1">
 					<p class="text-center">Tu hogar | Tu estilo | Tus gustos | Tu satisfacción | Tus éxitos</p>
 				</div>
-				<div>
+				<div class="p-1">
 					<p class="text-center">Nuestra motivación | Nuestro arte | Nuestra pasión</p>
 				</div>
 			</div>
 		</div>
-		<div class="sNuevo container">
+		<div class="sNuevo container d-flex flex-column justify-content-center align-content-center">
 			<div class="carouselContainer2 my-3">
 				<header>
 					<div class="">
-						<h2 class="text-center textUpper animate__animated animate__fadeInUp">New in</h2>
+						<h2 class="text-center textUpper animate__animated animate__fadeInUp mb-1">New in</h2>
 					</div>
 				</header>	
 				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -171,12 +171,12 @@
 				</div>
 				<div class="">
 					<a href="pages/novedades.html">
-						<p class="textCenter textUpper animate__animated animate__fadeInUp">Ver todas las novedades</p>
+						<p class="textCenter textUpper animate__animated animate__fadeInUp mb-1">Ver todas las novedades</p>
 					</a>
 				</div>
 			</div>
 		</div>
-		<div class="sReputacion container">
+		<div class="sReputacion container d-flex flex-column justify-content-center align-content-center">
 			<div>
 				<header>
 					<p class="textUpper">Lo que dicen de nosotros</p>
@@ -206,9 +206,9 @@
 				</div>
 			</div>	
 		</div>
-		<div class="sRegistro container my-3">	
+		<div class="sRegistro container my-3 d-flex flex-column justify-content-start align-content-center">	
 			<div class="my-3">
-				<form>
+				<form class="d-flex flex-column justify-content-center align-content-center">
 					<div class="form-group">
 					  <label for="exampleInputEmail1">Registra tu correo electrónico para enterarte de nuestras novedades:</label>
 					  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="@">
