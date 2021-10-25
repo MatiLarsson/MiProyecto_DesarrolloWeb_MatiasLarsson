@@ -3,11 +3,21 @@
         width: 100%;
         .galeriaProductos{
             width: 100%;
+            display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
+            align-content: center;
             div{
+                display: flex;
+                flex-direction: column;
                 flex-wrap: wrap;
+                justify-content: space-around;
                 div{
+                    display: flex;
+                    flex-direction: row;
                     flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-content: center;
                     a{
                         display: flex;
                         margin: 1rem;
