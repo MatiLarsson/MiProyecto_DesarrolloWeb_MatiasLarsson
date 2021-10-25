@@ -3,9 +3,14 @@
         width: 100%;
         .galeriaProductos{
             width: 100%;
+            flex-wrap: wrap;
             div{
+                flex-wrap: wrap;
                 div{
+                    flex-wrap: wrap;
                     a{
+                        display: flex;
+                        margin: 1rem;
                       img{
                             border-radius: $br-10;
                             margin: 0;
