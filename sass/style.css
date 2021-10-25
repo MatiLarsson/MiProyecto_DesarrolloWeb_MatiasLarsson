@@ -716,14 +716,14 @@ body {
   width: 100%;
 }
 
-#main .galeria .galeriaProductos div div img {
+#main .galeria .galeriaProductos div div a img {
   border-radius: 10px;
   margin: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-#main .galeria .galeriaProductos div div img:hover {
+#main .galeria .galeriaProductos div div a img:hover {
   scale: 1.2;
 }
 

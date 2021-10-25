@@ -5,17 +5,18 @@
             width: 100%;
             div{
                 div{
-                    img{
-                        border-radius: $br-10;
-                        margin: 0;
-                        transition: 0.3s;
-                        &:hover{
-                            scale: 1.2;
+                    a{
+                      img{
+                            border-radius: $br-10;
+                            margin: 0;
+                            transition: 0.3s;
+                            &:hover{
+                                scale: 1.2;
+                            }
                         }
                     }
-                }
+                }   
             }
         }
     }
 }
-    
